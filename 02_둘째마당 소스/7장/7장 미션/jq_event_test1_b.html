@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+<style>
+	*{margin:0;padding:0;box-sizing:border-box;}
+	body{padding:20px;}
+	li{list-style:none;}
+	a{text-decoration: none;color: #000;}
+	.gnb{width:400px;text-align: center;overflow: hidden;}
+	.gnb li{width:25%;float: left;padding:5px;}
+	.gnb li a{border: 1px solid #000;display: block;padding:5px 0;}
+</style>
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	var beforeMenu = null;
+	$(".gnb > li > a").on("mouseover focus", function() {
+		if(beforeMenu) beforeMenu.css({background:"none"});
+		$(this).css({"background-color":"#0ff"});
+		beforeMenu = $(this);
+	});
+	$(".gnb").on("mouseleave", function() {
+		if(beforeMenu) beforeMenu.css({background:"none"});
+	});
+});
+</script>
+</head>
+<body>
+	<ul class="gnb">
+		<li><a href="#">menu1</a></li>
+		<li><a href="#">menu2</a></li>
+		<li><a href="#">menu3</a></li>
+		<li><a href="#">menu4</a></li>
+	</ul>
+</body>
+</html>

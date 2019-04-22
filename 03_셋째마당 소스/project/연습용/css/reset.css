@@ -1,0 +1,16 @@
+@charset "utf-8";
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,
+li,ol,p,select,table,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,table,textarea{font-size:12px;
+font-family:Dotum,'돋움',Helvetica,"AppleSDGothicNeo",sans-serif}
+fieldset,img{border:0;vertical-align:middle}
+img, video{max-width:100%}
+ol,ul{list-style:none}
+address,em{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal}
+a{text-decoration:none;color:inherit}
+a:hover{text-decoration:underline}
+.blind{position:absolute;overflow:hidden;clip:rect(0000);
+margin:-1px;width:1px;height:1px}
+html{overflow-y:scroll}
+input[type="button"], button{cursor: pointer;}

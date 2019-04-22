@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 선택자 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$("#myList li").not(":first")
+	.css("background-color","yellow");
+});
+</script>
+</head>
+<body>
+	<ul id="myList">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+	</ul>
+</body>
+</html>

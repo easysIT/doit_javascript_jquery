@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ) {
+	$("#box_1").on("mouseout", function(){
+		$("#box_1")
+		.css({"background-color":"yellow"});
+	});
+	
+	$("#box_2").on("mouseleave", function(){
+		$("#box_2")
+		.css({"background-color":"pink"});
+	});
+});
+</script>
+</head>
+<body>
+<h1>mouseout</h1>
+<div id="box_1">
+				<p><a href="#">내용1</a></p>
+				<p><a href="#">내용2</a></p>
+				<p><a href="#">내용3</a></p>
+</div>
+
+<h1>mouseleave</h1>
+<div id="box_2">
+				<p><a href="#">내용4</a></p>
+				<p><a href="#">내용5</a></p>
+				<p><a href="#">내용6</a></p>
+</div>
+</body>
+</html>

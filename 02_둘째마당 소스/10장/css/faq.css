@@ -1,0 +1,15 @@
+.faq{margin:20px 0;}
+.faq button{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    cursor:pointer;
+}
+.cont{
+    padding: 10px;
+    background-color: #efefef;
+}
+.faq li > div{display: none;}

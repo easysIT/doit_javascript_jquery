@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> 논리연산자 </title>
+<script>
+	var a = 10, 
+		b= 20, 
+		c = 0, 
+		d = "hello";
+	var result;
+
+	result = b > a || b <= c || a > c;
+	document.write(result, "<br>");
+
+	result = a > b || b < c || d;
+	document.write(result, "<br>");
+
+	result = a <= b && b >= c && c > a;
+	document.write(result, "<br>");
+
+	result = a <= b && c && b >= c;
+	document.write(result, "<br>");
+
+	result= !(a > b);
+	document.write(result, "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

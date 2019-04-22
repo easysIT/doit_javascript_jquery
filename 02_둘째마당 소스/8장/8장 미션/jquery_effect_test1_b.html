@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 효과와 애니메이션 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+  $("#btn").on("click",function(){
+    $("h1").fadeOut(1000);
+  });
+});
+</script>
+</head>
+<body>
+ <button id="btn">버튼</button>
+ <h1>내용</h1>
+</body>
+</html>

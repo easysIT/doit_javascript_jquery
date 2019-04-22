@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$("#user_id_1, #user_pw_1").on("focus", 
+	function(){
+					$(this)
+					.css({"background-color":"pink"});
+	});
+	$("#user_id_1, #user_pw_1").on("blur",
+	function(){
+					$(this)
+					.css({"background-color":"#fff"});
+	});
+
+	$("#frm_2").on("focusin",
+	function(){
+					$(this)
+					.css({"background-color":"pink"});
+	});
+	$("#frm_2").on("focusout",
+	function(){
+					$(this)
+					.css({"background-color":"#fff"});
+	});
+});
+</script>
+</head>
+<body>
+<h1>focus / blur</h1>
+<form action="#">
+	<p>
+		<label for="user_id_1">ID</label>
+		<input type="text" 
+		name="user_id_1" id="user_id_1">
+	</p>
+	<p>
+		<label for="user_pw_1">PW</label>
+		<input type="password" 
+		name="user_pw_1" id="user_pw_1">
+	</p>
+</form>
+<h1>focusin / focusout</h1>
+<form action="#" id="frm_2">
+	<p>
+		<label for="user_id_2">ID</label>
+		<input type="text" 
+		name="user_id_2" id="user_id_2">
+	</p>
+	<p>
+		<label for="user_pw_2">PW</label>
+		<input type="password" 
+		name="user_pw_2" id="user_pw_2">
+	</p>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ) {
+	$(document).on("mousemove", function(e) {
+		$(".posX").text(e.pageX);
+		$(".posY").text(e.pageY);
+	});
+});
+</script>
+</head>
+<body>
+<h1>mousemove</h1>
+<p>X : <span class="posX">0</span>px</p>
+<p>Y : <span class="posY">0</span>px</p>
+</body>
+</html>

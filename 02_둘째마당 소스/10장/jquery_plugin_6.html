@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Plugin </title>
+<style>
+	*{margin: 0;padding: 0;}
+	li{list-style: none;}
+	body{font: 14px Malgun Gothic,"맑은고딕",sans-serif;color: #555;}
+	h1{font-size:1em;margin-bottom:10px;}
+</style>
+<link rel="stylesheet" href="css/faq.css">
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	$.fn.extend({ 
+		faq: function() {
+			var ts = $(this);
+			$.each(ts, function(i, o){
+				$("button", o).on("click", faqHanddler);
+				function faqHanddler() {
+					if( $(this).parent().next().is(":hidden")) {
+						$("li>div:visible", o).hide();
+						$(this).parent().next().show();
+					} else {
+						$("li>div:visible", o).hide();
+					}
+				}
+			});
+		}
+	});
+
+	$(".faq").faq();
+});
+</script>
+</head>
+<body>
+	<h1>질문 제목1</h1>
+	<div class="faq">
+		<ul>
+			<li>
+				<p><button>Q1. 자주 묻는 질문 내용?</button></p>
+				<div>
+					<div class="cont">답변 내용1</div>
+				</div>
+			</li>
+			<li>
+					<p><button>Q2. 자주 묻는 질문 내용?</button></p>
+					<div>
+						<div class="cont">답변 내용2</div>
+					</div>
+			</li>
+		</ul>
+	</div>
+	<h1>질문 제목2</h1>
+	<div class="faq">
+		<ul>
+			<li>
+				<p><button>Q1. 자주 묻는 질문 내용?</button></p>
+				<div>
+					<div class="cont">답변 내용1</div>
+				</div>
+			</li>
+			<li>
+				<p><button>Q2. 자주 묻는 질문 내용?</button></p>
+				<div>
+					<div class="cont">답변 내용2</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

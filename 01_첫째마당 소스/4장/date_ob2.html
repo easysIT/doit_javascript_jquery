@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 날짜 정보 객체 </title>
+<script>
+	var today = new Date();
+	var nowYear = today.getFullYear();
+	
+	var theDate = new Date(nowYear, 11, 31);
+	var diffDate = theDate.getTime( ) - today.getTime( );
+	
+	var result = Math.ceil( diffDate / (60 * 1000 * 60 * 24) );
+	document.write("<h1>오늘부터 올해 연말까지 남은 날짜</h1>");
+	document.write("D-day: " + result + "일 남았습니다.");
+</script>
+</head>
+<body>
+</body>
+</html>

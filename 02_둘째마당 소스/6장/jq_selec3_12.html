@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 객체 조작 및 생성 </title>  
+<script src="js/jquery.js"></script>
+<script>
+	$(function( ){
+		$("h2").replaceWith("<h3>replace method</h3>");
+		$("<p>Change</p>").replaceAll("div"); 
+	});
+</script>
+</head>
+<body>
+	<section class="box1">
+		<h2>제목1</h2>
+		<div>내용1</div>
+		<div>내용2</div>
+	</section>
+	<section class="box2">
+		<h2>제목2</h2>    
+		<div>내용3</div>
+		<div>내용4</div>
+	</section>
+</body>
+</html>

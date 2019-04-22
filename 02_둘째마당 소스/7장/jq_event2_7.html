@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$(".btn_wrap").delegate(".btn_1.on", 
+	"mouseover focus", function() {
+		alert("HELLO!");
+	});
+	$(".btn_1").addClass("on");
+
+	$(document).one("mouseover focus", 
+	".btn_2.on", function() {
+		alert("WELCOME!");
+	});
+	$(".btn_2").addClass("on");
+});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<p class="btn_wrap">
+		<button class="btn_1">버튼1</button>
+	</p>
+	<p><button class="btn_2">버튼2</button></p>
+</div>
+</body>
+</html>

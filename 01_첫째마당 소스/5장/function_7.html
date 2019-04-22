@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 함수 </title>
+<script>
+	var num = 0;
+	function testFnc(){
+		num++;
+		document.write(num, "<br>");
+		if(num == 10) return;
+		
+		testFnc();
+	}
+	
+	testFnc();
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 효과와 애니메이션 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$(".txt1")
+	.animate({marginLeft:"300px"},1000);
+
+	$(".txt2").delay(3000)
+	.animate({marginLeft:"300px"},1000);
+
+	$(".btn1").on("click", moveElement);
+
+	function moveElement( ) {
+		$(".txt3")
+		.animate({marginLeft:"+=50px"},800);
+
+		$(".txt4")
+		.animate({marginLeft:"+=50px"},800);
+		$(".txt4").stop()
+
+		$(".txt5")
+		.animate({marginLeft:"+=50px"},800);
+		$(".txt5").stop(true, true)
+	}
+});
+</script>
+<style>
+	p{width: 110px;text-align: center;}
+	.txt1{background-color: aqua;}
+	.txt2{background-color: pink;}
+	.txt3{background-color: orange;}
+	.txt4{background-color: green;}
+	.txt5{background-color: gold;}
+</style>
+</head>
+<body>
+	<p class="txt1">효과1</p>
+	<p class="txt2">효과2<br> delay(3000)</p>
+
+	<p><button class="btn1">50px 전진</button></p>
+	<p class="txt3">효과3</p>
+	<p class="txt4">효과4<br>stop( )</p>
+	<p class="txt5">효과5<br>stop(true, true)</p>
+</body>
+</html>

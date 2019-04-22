@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 효과와 애니메이션 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	$(".txt1")
+	.animate({marginLeft:"100px"},1000)
+	.animate({marginLeft:"300px"},1000)
+	.animate({marginLeft:"400px"},1000);
+
+	$(".txt2")
+	.animate({marginLeft:"100px"},1000)
+	.animate({marginLeft:"300px"},1000)
+	.animate({marginLeft:"400px"},1000);
+	$(".txt2").clearQueue();
+});
+</script>
+<style>
+	.txt1, .txt2{width:50px; text-align: 
+	center; background-color: aqua;}
+	.txt2{background-color:orange;}
+</style>
+</head>
+<body>
+	<p class="txt1">내용1</p>
+	<p class="txt2">내용2</p>
+</body>
+</html>

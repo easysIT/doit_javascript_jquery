@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 중첩 if문 </title>
+<script>
+	var id = "easy1004";
+	var pw = "112233";
+
+	var user_id = prompt("아이디는?","");
+	var user_pw = prompt("비밀번호는?","");
+
+	if(id == user_id) {
+		if(pw == user_pw) {
+				document.write(user_id+"님 반갑습니다!");
+		} else {
+				alert("비밀번호가 일치하지 않습니다.");
+				location.reload();
+		}
+	} else {
+		alert("아이디가 일치하지 않습니다.");
+		location.reload();
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

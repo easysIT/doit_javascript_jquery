@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+	$(window).on("scroll",function(){
+		var sc_top = $(this).scrollTop();
+		var sc_left = $(this).scrollLeft();
+
+		$(".top").text(sc_top);
+		$(".left").text(sc_left);
+	});
+</script>
+<style>
+	body{
+		height:10000px;
+		width:5000px;
+	}
+	#wrap{
+		position: fixed;
+		left: 10px; top: 10px;
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<p>scrollTop: <span class="top">0</span>px</p>
+	<p>scrollLeft: <span class="left">0</span>px</p>
+</div>
+</body>
+</html>

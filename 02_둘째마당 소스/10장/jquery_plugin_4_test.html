@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Plugin </title>
+<style>
+	*{margin: 0;padding: 0;}
+	body{font-size: 12px;}
+	input{vertical-align: middle;}
+	#notice_wrap{
+		width: 300px;
+		position: absolute;
+		left: 30px;
+		top: 30px;
+		box-shadow:0 0 8px #000;
+	}
+	.closeWrap{
+		background-color: #000;
+		color:#fff;
+		text-align: right;
+		padding:5px 10px;
+	}
+	.closeWrap button{
+		margin-left: 20px;
+		cursor:pointer;
+	}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script>
+$(function() {
+
+});
+</script>
+</head>
+<body>
+	<div id="notice_wrap">
+		<img src="images/window_object_1.jpg" alt="공지사항">
+		<p class="closeWrap">
+			<input type="checkbox" name="expiresChk" id="expiresChk">
+			<label for="expiresChk">3일 동안 이 창 열지않기</label>
+			<button class="closeBtn">닫기</button>
+	</p>
+	</div>  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 객체 조작 및 생성 </title>  
+<script src="js/jquery.js"></script>
+<script>
+	$(function( ){
+		var $txt1 = $(".txt_1 span"),
+			$txt2 = $(".txt_2 span"),
+			$box = $(".box");
+
+		var off_t = $box.offset().top; //100
+		var pos_t = $box.position().top; //50
+
+		$txt1.text(off_t);
+		$txt2.text(pos_t);    
+	});
+</script>
+<style>
+	*{margin:0;padding:0;}
+	#box_wrap{
+		width:300px;
+		height:200px;
+		margin:50px auto 0;
+		position: relative;
+		background-color:#ccc;
+	}
+	.box{
+		width:50px;height:50px;
+		position:absolute;
+		left:100px;top:50px;
+		background-color:#f00;
+	}
+</style>
+</head>
+<body>
+	<div id="box_wrap">
+		<p class="box">박스</p>
+	</div>
+	<p class="txt_1">절대 top위칫값: <span></span></p>
+	<p class="txt_2">상대 top위칫값: <span></span></p>
+</body>
+</html>

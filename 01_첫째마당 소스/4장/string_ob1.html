@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 문자 객체 </title>
+<script>
+	var str = "Hello Thank you good luck to you";
+	document.write(str.charAt(16), "<br>");
+	document.write(str.indexOf("you"), "<br>");
+	document.write(str.indexOf("you", 16), "<br>");
+	document.write(str.lastIndexOf("you"), "<br>");
+	document.write(str.lastIndexOf("you", 25), "<br>");
+	document.write(str.match("luck"), "<br>");
+	document.write(str.search("you"), "<br>");
+	document.write(str.substr(21, 4), "<br>");
+	document.write(str.substring(6, 12), "<br>");
+	document.write(str.replace("you","me"), "<br>");
+	document.write(str.toLowerCase(), "<br>");
+	document.write(str.toUpperCase(), "<br>");
+	document.write(str.length, "<br>");
+
+	var arr = str.split(" ");
+	document.write(arr[0], "<br>");
+	document.write(arr[4], "<br>");
+
+	document.write(str.charCodeAt(0), "<br>");
+	document.write(String.fromCharCode(72), "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

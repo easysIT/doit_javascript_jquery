@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 운영체제 및 스크린 정보 </title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script>
+	var info = navigator.userAgent.toLowerCase();
+	var osImg = null;
+
+	if(info.indexOf('windows') >= 0) {
+		osImg = "windows.png";
+	} else if(info.indexOf('macintosh') >= 0) {
+		osImg = "macintosh.png";
+	} else if (info.indexOf('iphone') >= 0) {
+		osImg = "iphone.png";
+	} else if (info.indexOf('android') >= 0) {
+		osImg = "android.png";
+	}
+
+	document.write("<img src=\"images/" + osImg + "\">", "<br>");
+	var scr = screen;
+	var sc_w = scr.width;
+	var sc_h = scr.height;
+
+	document.write("모니터 해상도 너비:" + sc_w + "px", "<br>");
+	document.write("모니터 해상도 높이:" + sc_h + "px", "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$(document).on("keydown", keyEventFnc);
+	function keyEventFnc(e) {
+	var direct = "";
+
+	switch(e.keyCode){
+		case 37: direct = "LEFT";
+		break;
+		case 38: direct = "TOP";
+		break;
+		case 39: direct = "RIGHT";
+		break;
+		case 40: direct = "BOTTOM";
+		break;
+	}
+	
+	if(direct) $("#user_id").val(direct);
+	}
+});
+</script>
+</head>
+<body>
+	<p><input type="text" name="user_id" id="user_id"></p>
+</body>
+</html>

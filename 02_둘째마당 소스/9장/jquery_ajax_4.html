@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Ajax </title>
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	$.ajax({
+		url:"http://myhome.chosun.com/rss/www_section_rss.xml",
+		dataType:"xml",
+		success:function(data) {
+			console.log(data);
+		}
+	});
+});
+</script>
+</head>
+<body>
+  <div class="wrap"></div>
+</body>
+</html>

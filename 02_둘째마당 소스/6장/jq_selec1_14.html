@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 선택자 </title>  
+<script src="js/jquery.js"></script>
+<script>
+	$(function(){
+		$(".txt1").parents()
+		.css({
+			"border":"2px dashed #00f"
+		});
+
+		$(".txt2").parents("div")
+		.css({
+			"border":"2px solid #f00"
+		});
+	});
+</script>
+</head>
+<body>
+	<h1 class="title">선택자</h1>
+	<section>
+		<div>
+			<p class="txt1">내용</p>
+		</div>
+	</section>
+	<section>
+		<div>
+			<p class="txt2">내용</p>
+		</div>
+	</section>
+</body>
+</html>

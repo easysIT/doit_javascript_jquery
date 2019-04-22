@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 선택자 </title>  
+<script src="js/jquery.js"></script>
+<script>
+	$(function(){
+		var style_1 = {
+			"background-color":"#0ff",
+			"border":"2px solid #f00"
+		}
+
+		$(".txt").siblings( )
+		.css(style_1);
+	});
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>인접 관계 선택자</h1>
+		<p>내용1</p>
+		<p class="txt">내용2</p>
+		<p>내용3</p>
+		<p>내용4</p>
+	</div>
+</body>
+</html>
